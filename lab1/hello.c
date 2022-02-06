@@ -28,7 +28,7 @@ main(int argc, char **argv)
   }
   else {
     rc = MPI_Recv(message, 13, MPI_CHAR, 0, tag, MPI_COMM_WORLD, &status);
-    rc = MPI_Send(&rank, 1, MPI_INT, i, tag, MPI_COMM_WORLD);
+    rc = MPI_Send(&rank, 1, MPI_INT, 0, tag, MPI_COMM_WORLD);
   }
   printf("node %d : %.13s\n", rank, message);
   rc = MPI_Finalize();
