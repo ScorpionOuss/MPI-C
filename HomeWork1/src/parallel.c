@@ -7,8 +7,8 @@
 
 const int N = 256; // max Iterations
 const int b = 2; // Bound of divergence
-const int w = 2048; // Width
-const int h = 2048; // Height
+const int w = 4096; // Width
+const int h = 4096; // Height
 
 unsigned char cal_pixel(double complex comp, int bound, int maxIter){
     /**
@@ -82,13 +82,13 @@ void main(int argc, char** argv){
 
         FILE *fp;
         /* Printing the computations in ascii format*/
-        fp = fopen("color.txt", "w");
+        fp = fopen("color1.txt", "w");
         for (int j = 0; j < h; j++) {
             for (int i = 0; i < w; i++) {
                 fprintf(fp, "%hhu ", colors[i][j]);
             }
             fprintf(fp, "\n");
-            }
+        }
             fclose(fp);
     }
 
@@ -96,4 +96,4 @@ void main(int argc, char** argv){
         rc = MPI_Send(color, sizeof(color), MPI_CHAR, 0, tag, MPI_COMM_WORLD);
     }
     rc = MPI_Finalize();
-
+}

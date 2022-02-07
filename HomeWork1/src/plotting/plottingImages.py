@@ -33,6 +33,6 @@ def plotFigure():
 
 def main():
     image = plotFigure()
-    save_image(image, 'Graphic.png')
+    save_image(image, 'Graphic2.png')
 
 main()

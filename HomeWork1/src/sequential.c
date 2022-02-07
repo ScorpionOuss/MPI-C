@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 const int N = 256; // max Iterations
-const int b = 2; // Bound of divergence
+const int b = 1; // Bound of divergence
 const int w = 2048; // Width
 const int h = 2048; // Height
 
