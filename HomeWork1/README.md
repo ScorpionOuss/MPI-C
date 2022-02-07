@@ -2,4 +2,4 @@
 
 * Sequential implementation of the **Mandelbrot** algorithm
 * Parallel implementation using **MPI**
-* Geometrical transformations of Images using **Pillow** of **Python**
+* Geometrical transformations of Images using the library **Pillow** of **Python**
