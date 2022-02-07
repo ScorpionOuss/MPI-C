@@ -1,6 +1,6 @@
 import os, sys
 from PIL import Image
-from src.plotting.readTxt import readData
+from readTxt import readData
 
 path = "color.txt"
 width = 2048
