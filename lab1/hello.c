@@ -1,5 +1,9 @@
 /* sample hello world program  *
- *  C Michael Hanke 2006-10-19 */
+ * Commands on Pdc 
+ -> salloc -n 4 -p shared -t 00:10:00 -A edu22.sf2568 // Here we allocate 4 processes.
+ -> Compilation with cc
+ -> srun ./a.out
+  */
 
 #include <stdio.h>
 #include <string.h>
