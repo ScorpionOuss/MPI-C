@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
 	MPI_Recv(0, 0, MPI_CHAR, pred, tag, MPI_COMM_WORLD, &status);
 	}
     
-    FILE *fp = fopen("out.b", "w");
+    FILE *fp = fopen("out.b", "a");
     for (int i = 0; i < I; i++){
 	fprintf(fp, "%f ", unew[i]);
     }
@@ -159,7 +159,7 @@ double r(const double x){
      * @brief
      * 
      */
-    return 1.0;
+    return x + 1.0;
 }
 
 double f(const double x){
@@ -167,5 +167,5 @@ double f(const double x){
      * @brief 
      * 
      */
-    return (double) sin(x);
+    return (double) sin(25*M_PI*x);
 }
